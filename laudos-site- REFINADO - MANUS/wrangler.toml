@@ -1,0 +1,14 @@
+name = "laudos-site"
+compatibility_date = "2023-12-01"
+
+# Configuração para o banco de dados D1
+[[d1_databases]]
+binding = "DB"                # Nome da variável de ambiente
+database_name = "laudos-db"   # Nome do banco de dados
+database_id = "local"         # ID para desenvolvimento local
+
+# Configuração para armazenamento de arquivos
+[[r2_buckets]]
+binding = "LAUDOS_BUCKET"
+bucket_name = "laudos-bucket"
+preview_bucket_name = "laudos-bucket-preview"

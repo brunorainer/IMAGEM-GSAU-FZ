@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #041E42; /* Azul escuro da Aeronáutica */
+  --primary: #0A3161; /* Azul médio da Aeronáutica */
+  --primary-light: #1E5AA8; /* Azul claro da Aeronáutica */
+  --accent: #FFCD00; /* Amarelo para destaque */
+  --background: #F8F9FA;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #0A3161;
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+  @apply bg-[#041E42] hover:bg-[#0A3161] text-white font-bold py-2 px-4 rounded transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-100 text-[#041E42] font-bold py-2 px-4 rounded border border-[#041E42] transition-colors;
+}
+
+.header {
+  @apply bg-[#041E42] text-white py-4;
+}
+
+.footer {
+  @apply bg-[#041E42] text-white py-6;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.form-input {
+  @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#0A3161] focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.form-error {
+  @apply text-red-500 text-sm mt-1;
+}
+
+.nav-link {
+  @apply text-white hover:text-[#FFCD00] transition-colors;
+}
+
+.section-title {
+  @apply text-2xl font-bold text-[#041E42] mb-4;
+}
+
+.access-code {
+  @apply font-mono bg-gray-100 p-2 rounded border border-gray-300;
+}
+
+.admin-section {
+  @apply border-b border-gray-200 pb-4 mb-4;
+}
+
+.admin-title {
+  @apply text-xl font-semibold text-[#041E42] mb-2;
+}
+
+.alert-success {
+  @apply bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded;
+}
+
+.alert-error {
+  @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded;
+}
+
+.alert-info {
+  @apply bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded;
+}
